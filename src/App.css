@@ -3,8 +3,8 @@
   text-align: center;
   border: solid;
   font-size: 100%;
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
   background-size: cover;
   background: rgb(143, 142, 160);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(170,255,248,1) 0%, rgba(88,255,155,1) 100%);
@@ -15,12 +15,12 @@
   width: 95px;
   height: 95px;
   border-radius: 30%;
-  font-size: 165%;
+  font-size: 170%;
 }
 
 .showtime {
   margin: -50px;
-  font-size: 125%;
+  font-size: 135%;
 }
 
 .minutes{
@@ -79,4 +79,8 @@
 .minusButton{
   margin: 15px;
 
+}
+
+.tex {
+  font-size: 130%;
 }

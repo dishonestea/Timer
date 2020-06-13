@@ -110,12 +110,12 @@ class App extends React.Component {
         <h2 className = 'title'>Timer</h2>
         <div className = 'showtime'>{this.showTime()}</div>
         <div className = 'times'>
-        <p>Minutes</p>
+        <p className = 'tex'>Minutes</p>
         <div className = 'minutes'>
         <button className = 'timeButton plusButton' onClick={() => this.minuteUp()}>+</button>
         <button className = 'timeButton minusButton' onClick={() => this.minuteDown()}>-</button>
         </div>
-        <p>Seconds</p>
+        <p className = ' tex'>Seconds</p>
         <div className = 'seconds'>
         <button className = 'timeButton plusButton' onClick={() => this.secondUp()}>+</button>
         <button className = 'timeButton minusButton' onClick={() => this.secondDown()}>-</button>
