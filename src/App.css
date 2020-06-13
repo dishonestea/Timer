@@ -2,7 +2,7 @@
   
   text-align: center;
   border: solid;
-  font-size: 125%;
+  font-size: 100%;
   margin: auto;
   padding: auto;
   background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .showtime {
-  margin: -60px;
+  margin: -50px;
   font-size: 125%;
 }
 
