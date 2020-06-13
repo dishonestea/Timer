@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Timer/static/css/main.0bf0f37c.chunk.css",
+    "main.css": "/Timer/static/css/main.d252d89b.chunk.css",
     "main.js": "/Timer/static/js/main.1cb57ea1.chunk.js",
     "main.js.map": "/Timer/static/js/main.1cb57ea1.chunk.js.map",
     "runtime-main.js": "/Timer/static/js/runtime-main.55819dd5.js",
@@ -8,16 +8,16 @@
     "static/js/2.69468d8b.chunk.js": "/Timer/static/js/2.69468d8b.chunk.js",
     "static/js/2.69468d8b.chunk.js.map": "/Timer/static/js/2.69468d8b.chunk.js.map",
     "index.html": "/Timer/index.html",
-    "precache-manifest.3e345c1d9be79bd9196d0a2c6ccac035.js": "/Timer/precache-manifest.3e345c1d9be79bd9196d0a2c6ccac035.js",
+    "precache-manifest.5ed7919dff2d4ba0d76397728ffe52a2.js": "/Timer/precache-manifest.5ed7919dff2d4ba0d76397728ffe52a2.js",
     "service-worker.js": "/Timer/service-worker.js",
-    "static/css/main.0bf0f37c.chunk.css.map": "/Timer/static/css/main.0bf0f37c.chunk.css.map",
+    "static/css/main.d252d89b.chunk.css.map": "/Timer/static/css/main.d252d89b.chunk.css.map",
     "static/js/2.69468d8b.chunk.js.LICENSE.txt": "/Timer/static/js/2.69468d8b.chunk.js.LICENSE.txt",
     "static/media/ting.wav": "/Timer/static/media/ting.2ed3ed02.wav"
   },
   "entrypoints": [
     "static/js/runtime-main.55819dd5.js",
     "static/js/2.69468d8b.chunk.js",
-    "static/css/main.0bf0f37c.chunk.css",
+    "static/css/main.d252d89b.chunk.css",
     "static/js/main.1cb57ea1.chunk.js"
   ]
 }
