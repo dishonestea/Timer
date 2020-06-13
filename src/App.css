@@ -4,8 +4,6 @@
   font-size: 125%;
   margin: auto;
   padding: auto;
-  background: rgb(143, 142, 160);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(170,255,248,1) 0%, rgba(88,255,155,1) 100%);
 }
 
 .timeButton{
