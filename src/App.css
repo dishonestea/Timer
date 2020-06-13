@@ -10,15 +10,15 @@
 }
 
 .timeButton{
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
   border-radius: 30%;
-  font-size: 175%;
+  font-size: 165%;
 }
 
 .showtime {
   margin: -60px;
-  font-size: 120%;
+  font-size: 125%;
 }
 
 .minutes{
@@ -41,7 +41,7 @@
 .resume {
   display:flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 40px;
   
   
 }
@@ -49,25 +49,25 @@
 .reset {
   display: flex;
   justify-content: space-around;
-  margin-top: 25px;
+  margin-top: 35px;
   
 }
 
 .resumeButton {
-  font-size: 300%;
+  font-size: 310%;
   border-radius: 30%;
 
 }
 
 .resetButton {
-  font-size: 200%;
-  margin-bottom: 10px;
+  font-size: 210%;
+  margin-bottom: 15px;
   border-radius: 30%;
 
 }
 
 .largerFont {
-  font-size: 5em;
+  font-size: 4.5em;
 }
 
 .plusButton{
