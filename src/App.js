@@ -31,9 +31,11 @@ class App extends React.Component {
     }
 
     minuteDown = () => {
+      if(this.state.timer > 60){
       this.setState((state, props) => ({
         timer: state.timer - 60
       }));
+    }
     }
 
     pauseClicked = () => {
@@ -85,37 +87,38 @@ class App extends React.Component {
     
     componentDidUpdate() {
       if (this.state.timer <= 0 && this.state.isEnded === false) {
-        this.play();
+        
         clearInterval(this.timerID);
         this.setState({
           isActive: false,
           isEnded: true
-        })
+        }, () => this.play());
       }
     }
      audio = new Audio(ting);
 
     play = () => {
-      this.audio.play();
+      this.audio.play()
     }
+
 
   render() {
 
     return (
       <div className = 'App'>
 
-        <h2 className = 'title'>Clock</h2>
-        {this.showTime()}
+        <h2 className = 'title'>Timer</h2>
+        <div className = 'showtime'>{this.showTime()}</div>
         <div className = 'times'>
         <p>Minutes</p>
         <div className = 'minutes'>
-        <button className = 'timeButton' onClick={() => this.minuteUp()}>+</button>
-        <button className = 'timeButton' onClick={() => this.minuteDown()}>-</button>
+        <button className = 'timeButton plusButton' onClick={() => this.minuteUp()}>+</button>
+        <button className = 'timeButton minusButton' onClick={() => this.minuteDown()}>-</button>
         </div>
         <p>Seconds</p>
         <div className = 'seconds'>
-        <button className = 'timeButton' onClick={() => this.secondUp()}>+</button>
-        <button className = 'timeButton' onClick={() => this.secondDown()}>-</button>
+        <button className = 'timeButton plusButton' onClick={() => this.secondUp()}>+</button>
+        <button className = 'timeButton minusButton' onClick={() => this.secondDown()}>-</button>
         </div>
         </div>
         <div className = 'resume'>
