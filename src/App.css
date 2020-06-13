@@ -12,8 +12,8 @@
 }
 
 .timeButton{
-  width: 90px;
-  height: 90px;
+  width: 95px;
+  height: 95px;
   border-radius: 30%;
   font-size: 165%;
 }
@@ -27,7 +27,7 @@
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 135%;
+  font-size: 140%;
   
 }
 
@@ -35,7 +35,7 @@
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 135%;
+  font-size: 140%;
 
 
 }
@@ -43,7 +43,7 @@
 .resume {
   display:flex;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 45px;
   
   
 }
@@ -51,32 +51,32 @@
 .reset {
   display: flex;
   justify-content: space-around;
-  margin-top: 35px;
+  margin-top: 40px;
   
 }
 
 .resumeButton {
-  font-size: 310%;
+  font-size: 320%;
   border-radius: 30%;
 
 }
 
 .resetButton {
-  font-size: 210%;
-  margin-bottom: 15px;
+  font-size: 220%;
+  margin-bottom: 20px;
   border-radius: 30%;
 
 }
 
 .largerFont {
-  font-size: 4.5em;
+  font-size: 5em;
 }
 
 .plusButton{
-  margin: 10px;
+  margin: 15px;
 }
 
 .minusButton{
-  margin: 10px;
+  margin: 15px;
 
 }
