@@ -100,10 +100,10 @@ class App extends React.Component {
 
     resetClicked = () => {
     this.setState({
-      timer: 300,
+      timer: 10,
       isActive: false,
       isEnded: false,
-      breakTimer: 100,
+      breakTimer: 5,
       isBreakStarted: false,
       isBreakActive: false,
       isBreakEnded: false
