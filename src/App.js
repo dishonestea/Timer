@@ -14,7 +14,8 @@ class App extends React.Component {
       breakTimer: 5,
       isBreakStarted: false,
       isBreakActive: false,
-      isBreakEnded: false
+      isBreakEnded: false,
+      timeStarted: false
 
     };
   }
@@ -112,6 +113,14 @@ class App extends React.Component {
     }
     
     pauseButton = () => {
+      
+      if(this.state.timeStarted === false){
+        this.setState({
+          timeStarted: true
+        });
+      }
+
+      
       if(this.state.isEnded === false){
       this.setState(prevState => ({
         isActive: !prevState.isActive
@@ -216,13 +225,25 @@ class App extends React.Component {
     }
     
 
+      setTime = () => {
+        return(
+          <div>
+          <div className = 'setBreakBeginning'>
+          <div>{this.showBreakTime()}</div>
+          <button className = ' ' onClick={() => this.breakMinuteUp()}>+1 minute</button>
+          <button className = ' ' onClick={() => this.breakMinuteDown()}>-1 minute</button>
+          <button className = ' ' onClick={() => this.breakSecondUp()}>+1 second</button>
+          <button className = ' ' onClick={() => this.breakSecondDown()}>-1 second</button>
+          </div>
+          </div> 
+        );
+      }
 
   render() {
 
     return (
       <div className = 'App'>
-        
-        <h2 className = 'title'>Timer</h2>
+        <h1 className = 'title'>Timer</h1>
         <p>{this.state.counter}</p>
         {this.state.isBreakStarted?
          <div>
@@ -238,7 +259,9 @@ class App extends React.Component {
         <button className = 'timeButton plusButton' onClick={() => this.breakSecondUp()}>+</button>
         <button className = 'timeButton minusButton' onClick={() => this.breakSecondDown()}>-</button>
         </div>
+        
         </div>
+        
         <div className = 'resume'>
         <button className = 'resumeButton' onClick={() => this.pauseBreakButton()}>{this.state.isBreakActive ? "Pause" : "Start"}</button>
         </div>
@@ -265,7 +288,7 @@ class App extends React.Component {
         </div>
 
         }
-        
+        { this.state.timeStarted? null : this.setTime()}
         <div className = 'reset'>
         <button className = 'resetButton' onClick={() => this.resetClicked()}>Reset</button>
         </div>

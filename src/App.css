@@ -8,6 +8,19 @@
   
 }
 
+.setBreakBeginning{
+
+  font-size: .3em;
+
+
+}
+
+.breakSet{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .timeButton{
   width: 95px;
   height: 95px;
